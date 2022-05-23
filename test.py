@@ -1,5 +1,5 @@
 import unittest
-import xmlrunner
+
 
 class TestSum(unittest.TestCase):
 
@@ -8,11 +8,6 @@ class TestSum(unittest.TestCase):
 
         f1 = open('answer1.txt', 'r')
         self.assertEqual(f.read(), f1.read())
-
-        output_file = open('result.xml', "w")
-
-        testRunner = xmlrunner.XMLTestRunner(output=output_file)
-        testRunner.run(unittest.main())
 
 
 if __name__ == '__main__':
